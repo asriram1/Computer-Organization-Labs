@@ -1,0 +1,160 @@
+
+
+3 a) uchar1 and schar1 have different values, since uchar1 is an unsigned integer,
+whereas schar1 is a signed integer. An unsigned integer can hold a larger positive value and no negative value. A signed integer can hold both positive and negative numbers. 
+
+d) The value for uchar1 prints, since uchar1 is recognized as greater than schar1.
+
+e) Yes this is what I expected, since both values added together do produce -3.
+
+f) No, this is not what I expected, since I would have expected a value which does not exceed 255, since a char has 8 bits, the maximum value that can be taken is (2**8)-1 which is 255.
+
+g) When schar1 and uchar1 are added, it produces a value of 254.
+
+
+5a) When you shift char left by one, the number gets multiplied by 2, in this case becomes 30, whereas, if it is shifted right by 1, it is divided by 2, in this case becomes 7.
+
+b) It gets multiplied by 2**3. This is what I expected, since each shift to the left results in the number getting multiplied by 2, and hence 3 shifts would mean 15 multiplied by 2, 3 times. In this case results in 120.
+
+c) The value, 15, would be multiplied by 2**7. In this case results in 1920.
+
+6 d) When you print the pointer values themselves, the addresses of the integers are printed out, instead of their values. %d is used for the integer format specifier, & %x is used to convert to a hexadecimal number, which is base-16 numbering. Hex is used for addresses, since it makes the addresses shorter, and a lot easier to read. The difference between ip & ip+1, is not 1, since as previously specified ip stores the address, and the address in this case stores an integer which takes a space of 4 bits. Hence the difference between ip (one address) & ip+1(the next address) would be 4.
+
+8 b) Strings in C end with a null character. The null character is what separates most character arrays from strings. Most functions would need the null to know when the string ends.
+c) It produces IBM
+d) It produces  IBM<? 
+
+
+Output:
+
+ PART 1 ---------
+
+ Hello Anirudh! 
+
+
+ PART 2 ----------
+
+ size of data type int = 4 
+ size of data type float = 4
+ size of data type double = 8
+ size of data type char = 1
+
+ PART 3 ----------
+
+ uchar1 = 255 
+ schar1 = -1 
+ uchar1 is larger and has a value = 255 
+ schar1 is larger and has a value = -1 
+ uchar1 is larger and has a value = 255 
+ This is the sum of schar1 and schar2 = -3
+ This is the sum of uchar1 and uchar2 = 509
+ This is the sum of uchar1 and schar1 = 254
+
+ PART 4 ----------
+
+ False = 0
+ The size of a Boolean is = 4
+ When you do x&y, it prints = 0
+ When you do x&&y, it prints = 1
+ When you do ~y, it prints = -3
+ When you do !y, it prints = 0
+
+ PART 5 ----------
+
+ shift_char << 1 = 30
+ shift_char >> 1 = 7
+ shift_char << 3 = 120
+ shift_char << 7 = 1920
+
+ PART 6 ----------
+
+start 0 
+ 0
+ 10
+ 0
+ 10
+ 40
+ 0
+start 10 
+ 10
+ 20
+ 10
+ 20
+ 50
+ 10
+ The size of the integer pointer data type is = 8
+This is what happens when you print the pointer values themselves 6eb7f7b4
+ 6eb7f7b4
+ 6eb7f7b8
+ 6eb7f7b4
+ 6eb7f7b8
+ 6eb7f7c4
+ 6eb7f7b4
+
+ PART 7 ----------
+
+ 90
+ 80
+ 70
+ 60
+ 50
+ 40
+ 30
+ 20
+ 10
+ 0
+
+
+ 90
+ 80
+ 70
+ 60
+ 50
+ 40
+ 30
+ 20
+ 10
+ 0
+
+ PART 8 ----------
+
+ HAL 
+
+ 72 
+
+ 65 
+
+ 76 
+
+ This is the null character: 0
+ IBM 
+
+ IBM<? 
+
+
+ PART 9 ----------
+
+ 6eb7f780
+ 6eb7f784
+ 6eb7f788
+ 6eb7f78c
+ 6eb7f790
+ 6eb7f794
+ 6eb7f798
+ 6eb7f79c
+ 6eb7f7a0
+ 6eb7f7a4
+
+
+ 6eb7f780
+ 6eb7f784
+ 6eb7f788
+ 6eb7f78c
+ 6eb7f790
+ 6eb7f794
+ 6eb7f798
+ 6eb7f79c
+ 6eb7f7a0
+ 6eb7f7a4
+
+ ALL DONE

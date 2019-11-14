@@ -1,0 +1,24 @@
+Anirudh Sriram
+Pre_Lab8
+
+
+Task 1:
+
+CPU being used - Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+Operating Frequency of CPU - 1200 MHz
+CPU cores - 10
+
+
+Task 2:
+
+Closest time to 1sec = 1.15193s
+
+
+
+Task 3:
+
+An efficient way to get rid of the anomalies is to create an average line of best fit through the points, which ignores the anomalies. After this one could manually delete data points that are very distant from the trend line. 
+
+For Psum1 the cycles per element came out to be -6.17, and for psum2, 2.706. 
+
+This difference in values for cycles per element would be owing to the use of a different computer to run the program. The negative value for the cycles per element for psum1 could be owing to the anomalies, which distorted the trend line. My computer could be taking less cycles per element for psum2, owing to a multitude of reasons such as lesser multitasking or complex hardware differences in my computer, interacting with the code in a different way. 

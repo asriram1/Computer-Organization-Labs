@@ -1,0 +1,10 @@
+1. The gate delay for the full adder is 5. Hence for the 64 bit ripple carry adder, the gate delay would be 320, since 64*5 = 320. 
+For the 2 stage carry select adder, the gate delay would be 32*5, which would be 160. For the 4 stage carry select adder, 
+the total delay would be 16*5, which is 80. This is the result we expected, since a carry select adder is more efficient than the ripple
+carry adder. Also the more the stages in a carry select adder the more efficient, which again explains the results. 
+
+2. Desciption of the timing results- In the waveforms with the delays, it can be observed that there is a greater amount of delay with the
+ripple carry adder, as compared to the carry select adder. This again makes sense, since a ripple carry adder is comparitively less efficient
+than the carry select adder. 
+
+Collaboration With Anand Sanmukhani
